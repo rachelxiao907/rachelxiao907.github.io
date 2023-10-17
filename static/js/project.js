@@ -2,7 +2,6 @@
 function createPage(project) {
     // The element with all the information of the project
     const body = document.getElementById('container-' + project['folder']);
-
     if (body == null) { //avoid errors
         return;
     }
@@ -13,43 +12,54 @@ function createPage(project) {
     const date = body.querySelector('.date');
     date.textContent = project['date'];
 
-    if ('github' in project) {
-        const github = document.createElement('a');
-        github.href = project['github'];
-        github.textContent = "Github";
-        github.target = "_blank";
-        github.className = "github";
-        body.querySelector('.links').appendChild(github);
+    // Populate links 
+    let linksDiv = document.querySelector(".links");
+    if (project.github) {
+        let githubLink = document.createElement("div");
+        githubLink.innerHTML = `<a class="github" target="_blank" href="${project.github}">Github</a>`;
+        linksDiv.appendChild(githubLink);
+    }
+    if (project.devpost) {
+        let devpostLink = document.createElement("div");
+        devpostLink.innerHTML = `<a class="github" target="_blank" href="${project.devpost}">Devpost</a>`;
+        linksDiv.appendChild(devpostLink);
     }
 
-    if ('devpost' in project) {
-        const devpost = document.createElement('a');
-        devpost.href = project['devpost'];
-        devpost.textContent = "Devpost";
-        devpost.target = "_blank";
-        devpost.className = "devpost";
-        body.querySelector('.links').appendChild(devpost);
-    }
-
-    if (project['photos'].length > 1) {
-        const arrows = body.querySelector('arrows');
-    }
-
-    // let htmlIndicator = '';
-    // let htmlInner = '';
-    // project['photos'].forEach(photo => {
-    //     htmlIndicator += '<li data-target="#myCarousel" data-slide-to="loop.index0"';
-    //     htmlInner += '<div><img src=' + photo + 'alt="project-photo" style="width:100%;"></div>';
-    // });
-    // const indicators = body.querySelector('carousel-indicators');
-    // indicators.innerHTML = htmlIndicator + htmlInner;
-
-    let htmlImages = '';
-    project['photos'].forEach(photo => {
-        htmlImages += '<div class="item"> <img src="{{photo}}" alt="project-photo" style="width:100%;"> </div>';
+    // Populate Photos
+    let carouselInner = document.querySelector(".carousel-inner");
+    project.photos.forEach((photo, index) => {
+        let photoElem = document.createElement("div");
+        photoElem.classList.add("item");
+        if(index === 0) photoElem.classList.add("active");
+        photoElem.innerHTML = `<img src="../../${photo}" alt="project-photo" style="width:100%;">`;
+        carouselInner.appendChild(photoElem);
     });
-    const indicators = body.querySelector('carousel-inner');
-    indicators.innerHTML = htmlImages;
+
+    // Handle carousel controls (Arrows)
+    if ((project.photos.length) > 1) { //only display if there is more than one image
+        let template = document.querySelector(".arrows");
+        let clone = document.importNode(template.content, true);
+        carouselInner.parentElement.appendChild(clone);
+    }
+
+    // Add styling for each page's container
+    cssRules = `
+    .container-${project.folder} {
+        height: 100%;
+        max-width: none;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        font-family: 'Open Sans', sans-serif;
+        display: grid;
+        grid-template-columns: 50% 50%;  
+    }`;
+    let styleElem = document.createElement("style");
+    styleElem.type = "text/css";
+    styleElem.innerHTML = cssRules;
+    document.head.appendChild(styleElem);
 }
 
 // Array of all project objects
