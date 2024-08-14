@@ -52,7 +52,7 @@ function createPage(project) {
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Open Sans', sans-serif !important;
         display: grid;
         grid-template-columns: 50% 50%;  
     }`;
