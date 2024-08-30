@@ -36,16 +36,86 @@ function createCard(project) {
 
 // Array of all project objects
 projects = [
-    // {
-    //   "name": "NGordnet (Wordnet)",
-    //   "link": "nogordnet",
-    //   "date": "March 2023",
-    //   "short": "An implementation of Wordnet, a large lexical database of semantic relations between words.",
-    //   "weight": 10,
-    //   "photos": [
-    //     "projects/ngordnet/img.jpg"
-    //   ]
-    // },
+    {
+      "name": "Vulnerable Web Server",
+      "folder": "server",
+      "date": "April 2024",
+      "link": "projects/snek/snek.html",
+      "short": "",
+      "weight": 16,
+      "photos": [
+        "projects/snek/img.jpg"
+      ]
+    },
+    {
+      "name": "Secure File Sharing System",
+      "folder": "secure",
+      "date": "March 2024",
+      "link": "projects/snek/snek.html",
+      "short": "",
+      "weight": 15,
+      "photos": [
+        "projects/snek/img.jpg"
+      ]
+    },
+    {
+      "name": "Convolutions",
+      "folder": "snek",
+      "date": "September 2023",
+      "link": "projects/snek/snek.html",
+      "short": "",
+      "weight": 14,
+      "photos": [
+        "projects/snek/img.jpg"
+      ]
+    },
+    {
+      "name": "Classify",
+      "folder": "classify",
+      "date": "October 2023",
+      "link": "projects/classify/classify.html",
+      "short": "",
+      "weight": 13,
+      "photos": [
+        "projects/classify/img.jpg"
+      ]
+    },
+    {
+      "name": "Snek",
+      "folder": "snek",
+      "date": "September 2023",
+      "link": "projects/snek/snek.html",
+      "short": "",
+      "weight": 12,
+      "photos": [
+        "projects/snek/img.jpg"
+      ]
+    },
+    {
+      "name": "Build Your Own World",
+      "folder": "byow",
+      "date": "April 2023",
+      "link": "projects/byow/byow.html",
+      "short": "",
+      "weight": 11,
+      "photos": [
+        "projects/byow/img.jpg"
+      ]
+    },
+    {
+      "name": "NGordnet (Wordnet)",
+      "folder": "nogordnet",
+      "link": "projects/ngordnet/ngordnet.html",
+      "date": "March 2023",
+      "short": "An implementation of Wordnet, a large lexical database of semantic relations between words.",
+      "weight": 10,
+      "photos": [
+        "projects/ngordnet/hyponyms.png",
+        "projects/ngordnet/hypohist.png",
+        "projects/ngordnet/common_ancestors.png",
+        "projects/ngordnet/history.png",
+      ]
+    },
     {
       "name": "Scheme Interpreter",
       "folder": "scheme",
