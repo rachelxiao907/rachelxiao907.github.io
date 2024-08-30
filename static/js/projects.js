@@ -36,70 +36,59 @@ function createCard(project) {
 
 // Array of all project objects
 projects = [
+    // {
+    //   "name": "Vulnerable Web Server",
+    //   "folder": "server",
+    //   "date": "April 2024",
+    //   "link": "projects/snek/snek.html",
+    //   "short": "",
+    //   "weight": 15,
+    //   "photos": [
+    //     "projects/snek/img.jpg"
+    //   ]
+    // },
+    // {
+    //   "name": "Secure File Sharing System",
+    //   "folder": "secure",
+    //   "date": "March 2024",
+    //   "link": "projects/snek/snek.html",
+    //   "short": "",
+    //   "weight": 14,
+    //   "photos": [
+    //     "projects/snek/img.jpg"
+    //   ]
+    // },
+    // {
+    //   "name": "Convolutions",
+    //   "folder": "snek",
+    //   "date": "September 2023",
+    //   "link": "projects/snek/snek.html",
+    //   "short": "",
+    //   "weight": 13,
+    //   "photos": [
+    //     "projects/snek/img.jpg"
+    //   ]
+    // },
+    // {
+    //   "name": "Classify",
+    //   "folder": "classify",
+    //   "date": "October 2023",
+    //   "link": "projects/classify/classify.html",
+    //   "short": "",
+    //   "weight": 12,
+    //   "photos": [
+    //     "projects/classify/img.jpg"
+    //   ]
+    // },
     {
-      "name": "Vulnerable Web Server",
-      "folder": "server",
-      "date": "April 2024",
-      "link": "projects/snek/snek.html",
-      "short": "",
-      "weight": 16,
-      "photos": [
-        "projects/snek/img.jpg"
-      ]
-    },
-    {
-      "name": "Secure File Sharing System",
-      "folder": "secure",
-      "date": "March 2024",
-      "link": "projects/snek/snek.html",
-      "short": "",
-      "weight": 15,
-      "photos": [
-        "projects/snek/img.jpg"
-      ]
-    },
-    {
-      "name": "Convolutions",
-      "folder": "snek",
-      "date": "September 2023",
-      "link": "projects/snek/snek.html",
-      "short": "",
-      "weight": 14,
-      "photos": [
-        "projects/snek/img.jpg"
-      ]
-    },
-    {
-      "name": "Classify",
-      "folder": "classify",
-      "date": "October 2023",
-      "link": "projects/classify/classify.html",
-      "short": "",
-      "weight": 13,
-      "photos": [
-        "projects/classify/img.jpg"
-      ]
-    },
-    {
-      "name": "Snek",
-      "folder": "snek",
-      "date": "September 2023",
-      "link": "projects/snek/snek.html",
-      "short": "",
-      "weight": 12,
-      "photos": [
-        "projects/snek/img.jpg"
-      ]
-    },
-    {
-      "name": "Build Your Own World",
+      "name": "2D Tile-Based World Exploration Engine",
       "folder": "byow",
       "date": "April 2023",
       "link": "projects/byow/byow.html",
-      "short": "",
+      "short": "A program that builds a world consisting of a 2D grid of tiles that the user can explore by walking around and interacting with objects in that world.",
       "weight": 11,
       "photos": [
-        "projects/byow/img.jpg"
+        "projects/byow/home.png"
       ]
     },
     {
