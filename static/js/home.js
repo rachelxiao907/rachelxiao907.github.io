@@ -4,9 +4,9 @@ $(function() {
     strings: [
       "stats rachelxiao<br/>" +
       "><span class='caret'>$</span> job: software engineer intern at nextdoor<br/> ^100" +
-      "><span class='caret'>$</span> education: uc berkeley '26<br/> ^100" +
-      "><span class='caret'>$</span> skills: python, java, c, sql, django, html, css, js<br/> ^100" +
-      "><span class='caret'>$</span> hobbies: traveling, journaling, bowling<br/> ^100"
+      "><span class='caret'>$</span> education: uc berkeley eecs '26<br/> ^100" +
+      "><span class='caret'>$</span> skills: python, java, c, sql, go, django, html, css, js<br/> ^100" +
+      "><span class='caret'>$</span> hobbies: traveling, journaling, bowling,<br/> ^100"
     ],
     showCursor: true,
     cursorChar: '_',
