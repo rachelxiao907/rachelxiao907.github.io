@@ -75,36 +75,25 @@ projects = [
     //   "date": "October 2023",
     //   "link": "projects/classify/classify.html",
     //   "short": "",
-    //   "weight": 12,
+    //   "weight": 11,
     //   "photos": [
-    //     "projects/classify/img.jpg"
+    //     "projects/classify/home.jpg"
     //   ]
     // },
-    {
-      "name": "2D Tile-Based World Exploration Engine",
-      "folder": "byow",
-      "date": "April 2023",
-      "link": "projects/byow/byow.html",
-      "short": "A program that builds a world consisting of a 2D grid of tiles that the user can explore by walking around and interacting with objects in that world.",
-      "weight": 11,
-      "photos": [
-        "projects/byow/home.png"
-      ]
-    },
-    {
-      "name": "NGordnet (Wordnet)",
-      "folder": "nogordnet",
-      "link": "projects/ngordnet/ngordnet.html",
-      "date": "March 2023",
-      "short": "An implementation of Wordnet, a large lexical database of semantic relations between words.",
-      "weight": 10,
-      "photos": [
-        "projects/ngordnet/hyponyms.png",
-        "projects/ngordnet/hypohist.png",
-        "projects/ngordnet/common_ancestors.png",
-        "projects/ngordnet/history.png",
-      ]
-    },
+    // {
+    //   "name": "NGordnet (Wordnet)",
+    //   "folder": "nogordnet",
+    //   "link": "projects/ngordnet/ngordnet.html",
+    //   "date": "March 2023",
+    //   "short": "An implementation of Wordnet, a large lexical database of semantic relations between words.",
+    //   "weight": 10,
+    //   "photos": [
+    //     "projects/ngordnet/hyponyms.png",
+    //     "projects/ngordnet/hypohist.png",
+    //     "projects/ngordnet/common_ancestors.png",
+    //     "projects/ngordnet/history.png",
+    //   ]
+    // },
     {
       "name": "Scheme Interpreter",
       "folder": "scheme",
